@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- TAILWIND -->
+    <link href="./src/output.css" rel="stylesheet" />
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="src/style.css" />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Yatra+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ICON FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- SLICK -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Taekwondo</title>
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- HEADER -->
+    <header
+      class="relative text-center redpic flex flex-col justify-center items-center bg-fixed bg-cover bg-center h-screen"
+    >
+      <!-- NAVBAR -->
+
+      <nav class="z-10 bg-transparent top-0 fixed w-screen text-white font2">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a
+            href="https://flowbite.com/"
+            class="flex items-center space-x-3 rtl:space-x-reverse"
+          >
+            <img src="src/images/icon.png" class="h-8" alt="Taekwondo Icon" />
+          </a>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul
+              class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            >
+              <li>
+                <a
+                  href="#history"
+                  class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:hover:text-red-600 md:p-0 dark:text-white md:dark:text-blue-500"
+                  aria-current="page"
+                  >HISTORY</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#basic"
+                  class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >BASIC</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#belts"
+                  class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >BELTS</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#kyorugi"
+                  class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >KYORUGI</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#poomsae"
+                  class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >POOMSAE</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- IMAGE SECT -->
+      <img
+        class="relative bottom-0 z-0 opacity-80 h-screen object-cover"
+        src="src/images/hd-img.png"
+        alt=""
+      />
+
+      <!-- HEADER CONTENT -->
+      <div class="text absolute text-center">
+        <!-- BIG -->
+        <text
+          fill="none"
+          stroke-width=".015"
+          stroke="#000000"
+          class="font1 text-red-600 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] text-5xl hidden sm:block sm:text-7xl md:text-8xl lg:text-9xl"
+        >
+          TAEKWONDO
+        </text>
+
+        <!-- SMALL -->
+        <text
+          class="relative font1 text-red-600 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] sm:hidden block"
+        >
+          <span class="text-8xl">TAE</span><br />
+          <span class="text-5xl">KWON</span><br />
+          <span class="text-8xl">D <span>O</span></span>
+        </text>
+
+        <p
+          class="z-20 font2 text-white text-sm sm:text-lg md:text-2xl lg:text-3xl"
+        >
+          Power. Precision. Perseverance.
+        </p>
+      </div>
+    </header>
+
+    <!-- CONTENTS -->
+    <main>
+      <!-- HISTORY -->
+      <section id="history" class="w-full flex justify-center h-full hiz font2">
+        <ul class="timeline w-5/6">
+          <li class="timeline">
+            <div class="icon done"></div>
+            <details class="panel">
+              <summary>Ancient Origins</summary>
+              <p>
+                The roots of Taekwondo can be found in ancient Korean martial
+                arts such as Taekkyeon and Subak, which date back over
+                <strong> 2,000 years.</strong>
+              </p>
+            </details>
+          </li>
+
+          <li class="timeline">
+            <div class="icon done"></div>
+            <details class="panel">
+              <summary>Japanese Occupation (1910-1945)</summary>
+              <p>
+                During this period, Korean martial arts were
+                <strong>suppressed</strong>, and many Koreans were forced to
+                learn Japanese martial arts like Karate.
+              </p>
+            </details>
+          </li>
+
+          <li class="timeline">
+            <div class="icon working"></div>
+            <details class="panel">
+              <summary>Post-World War II</summary>
+              <p>
+                After the end of World War II and the liberation of Korea from
+                Japanese rule, there was a <strong>resurgence</strong> of
+                interest in traditional Korean martial arts. Various martial
+                arts schools and associations were formed.
+              </p>
+            </details>
+          </li>
+
+          <li class="timeline">
+            <div class="icon"></div>
+            <details class="panel">
+              <summary>Establishment of Taekwondo</summary>
+              <p>
+                In the 1950s and 1960s, several Korean martial artists,
+                including General Choi Hong Hi, played key roles in developing
+                and promoting a unified form of Korean martial arts. In
+                <strong>1955</strong>, the name "Taekwondo" was officially
+                adopted for this new martial art, with "Tae" meaning foot,
+                "Kwon" meaning fist, and "Do" meaning way or path.
+              </p>
+            </details>
+          </li>
+
+          <li class="timeline">
+            <div class="icon"></div>
+            <details class="panel">
+              <summary>International Recognition</summary>
+              <p>
+                Taekwondo gained international recognition in the 1960s and
+                1970s, with the establishment of various
+                <strong>oranizations</strong> and
+                <strong>federations</strong> promoting its practice worldwide.
+              </p>
+            </details>
+          </li>
+
+          <li class="timeline">
+            <div class="icon"></div>
+            <details class="panel">
+              <summary>Olympic Recognition</summary>
+              <p>
+                One of the significant milestones in Taekwondo's history was its
+                inclusion as an official Olympic sport. Taekwondo made its debut
+                as a demonstration sport at the 1988 Seoul Olympics and became
+                an <strong> official Olympic sport in 2000</strong>.
+              </p>
+            </details>
+          </li>
+
+          <li class="timeline">
+            <div class="icon"></div>
+            <details class="panel">
+              <summary>Modern Development</summary>
+              <p>
+                Over the years, Taekwondo has evolved both as a sport and as a
+                martial art. It emphasizes kicking techniques, particularly high
+                and spinning kicks, along with punches, blocks, and stances. It
+                places a strong emphasis on
+                <strong> self-discipline, respect, and perseverance.</strong>
+              </p>
+            </details>
+          </li>
+        </ul>
+      </section>
+      <!-- cd-timeline -->
+
+      <!-- BASIC TECHNIQUES -->
+      <section
+        id="basic"
+        class="lg:h-[150vh] md:h-[170vh] w-full redpic bg-cover bg-center bg-fixed py-5 flex flex-col items-center justify-center gap-24"
+      >
+        <div class="container flex justify-center items-center flex-wrap">
+          <div
+            class="stancep techy lg:w-1/4 md:w-1/2 w-full flex justify-center"
+            onmouseover="showDescription('stancet')"
+            onmouseout="hideDescription('stancet')"
+          >
+            <img src="src/images/stance.png" class="w-3/4" alt="" />
+          </div>
+          <div
+            class="blockp techy lg:w-1/4 md:w-1/2 w-full flex justify-center"
+            onmouseover="showDescription('blockt')"
+            onmouseout="hideDescription('blockt')"
+          >
+            <img src="src/images/block.png" class="w-3/4" alt="" />
+          </div>
+          <div
+            class="strikep techy lg:w-1/4 md:w-1/2 w-full flex justify-center"
+            onmouseover="showDescription('striket')"
+            onmouseout="hideDescription('striket')"
+          >
+            <img src="src/images/punch.png" class="w-3/4" alt="" />
+          </div>
+          <div
+            class="kickp techy lg:w-1/4 md:w-1/2 w-full flex justify-center"
+            onmouseover="showDescription('kickt')"
+            onmouseout="hideDescription('kickt')"
+          >
+            <img src="src/images/kick.png" class="w-3/4" alt="" />
+          </div>
+        </div>
+        <div class="flex flex-col gap-0 w-[90%] justify-center items-center">
+          <div
+            class="stancet container w-5/6 bg-gray-200 p-5 rounded-3xl hidden"
+          >
+            <h1 class="pt-0 pb-5 text-5xl font1">STANCES</h1>
+            <p class="font2 text-center">
+              Taekwondo employs various stances to facilitate movement, balance,
+              and power generation. Common stances include the
+              <strong
+                >ready stance, horse stance, backstance, and fighting
+                stance.</strong
+              >
+            </p>
+            <div class="flex w-full flex-wrap">
+              <img
+                class="sm:w-1/4 w-1/2"
+                src="src/images/stance-ready.png"
+                alt=""
+              />
+              <img
+                class="sm:w-1/4 w-1/2"
+                src="src/images/stance-horse.png"
+                alt=""
+              />
+              <img
+                class="sm:w-1/4 w-1/2"
+                src="src/images/stance-back.png"
+                alt=""
+              />
+              <img
+                class="sm:w-1/4 w-1/2"
+                src="src/images/stance-fight.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            class="blockt container w-5/6 bg-gray-200 p-5 rounded-3xl hidden"
+          >
+            <h1 class="pt-0 pb-5 text-5xl font1">BLOCKS</h1>
+            <p class="font2 text-center">
+              Blocks are used to defend against incoming strikes. Common
+              blocking techniques include the <br />
+              <strong
+                >rising block, low block, outer forearm block, and inner forearm
+                block.</strong
+              >
+            </p>
+            <div class="flex w-full flex-wrap">
+              <img
+                class="sm:w-1/4 w-1/2"
+                src="src/images/block-high.png"
+                alt=""
+              />
+              <img
+                class="sm:w-1/4 w-1/2"
+                src="src/images/block-low.png"
+                alt=""
+              />
+              <img
+                class="sm:w-1/4 w-1/2"
+                src="src/images/block-inner.png"
+                alt=""
+              />
+              <img
+                class="sm:w-1/4 w-1/2"
+                src="src/images/block-outer.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            class="striket container w-5/6 bg-gray-200 p-5 rounded-3xl hidden"
+          >
+            <h1 class="pt-0 pb-5 text-5xl font1">STRIKES</h1>
+            <p class="font2 text-center">
+              Taekwondo utilizes a variety of hand strikes, including punches
+              and strikes with open hands. Basic hand strikes include the
+              <br /><strong>jab, uppercut, backfist, and crosspunch.</strong>
+            </p>
+            <div class="flex w-full flex-wrap">
+              <img
+                class="sm:w-1/4 w-1/2"
+                src="src/images/punch-jab.png"
+                alt=""
+              />
+              <img
+                class="sm:w-1/4 w-1/2"
+                src="src/images/punch-uppercut.png"
+                alt=""
+              />
+              <img
+                class="sm:w-1/4 w-1/2"
+                src="src/images/punch-backfist.png"
+                alt=""
+              />
+              <img
+                class="sm:w-1/4 w-1/2"
+                src="src/images/punch-crosspunch.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="kickt container w-5/6 bg-gray-200 p-5 rounded-3xl hidden">
+            <h1 class="pt-0 pb-5 text-5xl font1">KICKS</h1>
+            <p class="font2 text-center">
+              Kicking techniques are a hallmark of Taekwondo. They are
+              characterized by speed, power, and precision. Basic kicks include
+              the
+              <strong
+                >front kick, side kick, crescent kick, and roundhouse
+                kick.</strong
+              >
+            </p>
+            <div class="flex w-full flex-wrap">
+              <img
+                class="sm:w-1/4 w-1/2"
+                src="src/images/kick-front.png"
+                alt=""
+              />
+              <img
+                class="sm:w-1/4 w-1/2"
+                src="src/images/kick-side.png"
+                alt=""
+              />
+              <img
+                class="sm:w-1/4 w-1/2"
+                src="src/images/kick-crescent.png"
+                alt=""
+              />
+              <img
+                class="sm:w-1/4 w-1/2"
+                src="src/images/kick-roundhouse.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BELTS -->
+      <section
+        id="belts"
+        class="lg:h-[140vh] w-full hiz p-3 flex justify-center"
+      >
+        <div class="w-5/6 h-full flex justify-center items-center flex-wrap">
+          <div class="lg:w-1/3 sm:w-1/2 w-full p-3 whiteb">
+            <img src="src/images/white.png" alt="" />
+            <p
+              class="bg-gray-100 rounded-3xl p-3 text text-gray-400 font2 hidden text-justify"
+            >
+              The white belt is the starting point for all Taekwondo
+              practitioners. It symbolizes purity, innocence, and a beginner's
+              mindset. White belt practitioners typically focus on learning
+              basic techniques and etiquette.
+            </p>
+          </div>
+          <div class="lg:w-1/3 sm:w-1/2 w-full p-3 yellowb">
+            <img src="src/images/yellow.png" alt="" />
+            <p
+              class="bg-gray-100 rounded-3xl p-3 text text-yellow-400 font2 hidden text-justify"
+            >
+              Yellow belt signifies the earth from which a plant sprouts and
+              takes root. At this stage, practitioners continue to build on
+              their foundation, learning more advanced techniques and further
+              developing their understanding of Taekwondo principles.
+            </p>
+          </div>
+          <div class="lg:w-1/3 sm:w-1/2 w-full p-3 greenb">
+            <img src="src/images/green.png" alt="" />
+            <p
+              class="bg-gray-100 rounded-3xl p-3 text text-green-500 font2 hidden text-justify"
+            >
+              Green belt represents the growth and development of the plant as
+              it reaches upward toward the sun. Practitioners at this level
+              refine their techniques, increase their physical fitness, and
+              deepen their understanding of Taekwondo philosophy.
+            </p>
+          </div>
+          <div class="lg:w-1/3 sm:w-1/2 w-full p-3 blueb">
+            <img src="src/images/blue.png" alt="" />
+            <p
+              class="bg-gray-100 rounded-3xl p-3 text text-blue-500 font2 hidden text-justify"
+            >
+              Blue belt symbolizes the sky that the plant aspires to reach. At
+              this stage, practitioners demonstrate increased proficiency in
+              their techniques, focus on sparring skills, and begin to explore
+              more complex combinations and strategies.
+            </p>
+          </div>
+          <div class="lg:w-1/3 sm:w-1/2 w-full p-3 redb">
+            <img src="src/images/red.png" alt="" />
+            <p
+              class="bg-gray-100 rounded-3xl p-3 text text-red-500 font2 hidden text-justify"
+            >
+              Red belt signifies danger and the need for caution as the
+              practitioner approaches black belt level. At this advanced stage,
+              practitioners hone their skills to a high level of precision,
+              demonstrate leadership qualities, and prepare for the final test
+              before obtaining a black belt.
+            </p>
+          </div>
+          <div class="lg:w-1/3 sm:w-1/2 w-full p-3 blackb">
+            <img src="src/images/black.png" alt="" />
+            <p
+              class="bg-gray-100 rounded-3xl p-3 text text-black font2 hidden text-justify"
+            >
+              The black belt represents the beginning of a new journey rather
+              than the culmination of one. It signifies the attainment of a high
+              level of skill, knowledge, and dedication to Taekwondo. Black belt
+              practitioners continue to learn and grow, striving for mastery and
+              contributing to the advancement of the art.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- KYORUGI -->
+      <section
+        id="kyorugi"
+        class="md:h-[120vh] w-full redpic bg-cover bg-center bg-fixed py-5 flex flex-col justify-center items-center"
+      >
+        <div
+          class="container font2 flex flex-col justify-center items-center max-md:gap-10"
+        >
+          <div class="row1 p-0 m-0 md:w-1/2 flex justify-end relative">
+            <div
+              class="riltext bg-gray-300 w-full rounded-3xl p-3 text-justify"
+            >
+              <p>
+                <strong>Sparring</strong> is a dynamic, live-action component of
+                Taekwondo training where practitioners engage in controlled,
+                competitive bouts.
+              </p>
+            </div>
+            <div
+              class="mask text-white text-2xl bg-black w-full h-full rounded-3xl p-3 absolute text-center flex items-center justify-center"
+            >
+              <p>1</p>
+            </div>
+          </div>
+
+          <div
+            class="row2 flex items-center justify-center p-0 m-0 relative max-md:flex-col"
+          >
+            <div class="boxz md:w-1/4 relative">
+              <div
+                class="riltext bg-gray-300 rounded-3xl p-3 text-justify h-fit"
+              >
+                <p>
+                  It emphasizes applying techniques learned in a realistic and
+                  dynamic setting against an opponent.
+                </p>
+              </div>
+              <div
+                class="mask text-white text-2xl bg-black w-full h-full rounded-3xl p-3 text-center flex items-center justify-center absolute top-0"
+              >
+                <p>2</p>
+              </div>
+            </div>
+
+            <div class="md:w-1/2 p-3 flex justify-center items-center">
+              <img src="src/images/kyorugi.png" class="" alt="" />
+            </div>
+            <div class="boxz md:w-1/4 relative">
+              <div
+                class="riltext bg-gray-300 w-full rounded-3xl p-3 text-justify h-fit"
+              >
+                <p>
+                  Practitioners develop timing, distance management, strategy,
+                  and adaptability.
+                </p>
+              </div>
+              <div
+                class="mask text-white text-2xl bg-black w-full h-full rounded-3xl p-3 text-center flex items-center justify-center absolute top-0"
+              >
+                <p>3</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="row3 flex md:gap-14 gap-10 justify-center max-md:flex-col"
+          >
+            <div
+              class="boxz md:w-1/3 w-full relative flex justify-center items-center"
+            >
+              <div
+                class="riltext bg-gray-300 w-full rounded-3xl p-3 text-justify h-fit"
+              >
+                <p>
+                  Sparring fosters physical conditioning, agility, and mental
+                  resilience.
+                </p>
+              </div>
+              <div
+                class="mask text-white text-2xl bg-black w-full h-full rounded-3xl p-3 text-center flex items-center justify-center absolute top-0"
+              >
+                <p>4</p>
+              </div>
+            </div>
+            <div class="boxz md:w-1/3 w-full relative">
+              <div
+                class="riltext bg-gray-300 w-full rounded-3xl p-3 text-justify h-fit"
+              >
+                <p>
+                  Scoring is based on clean and controlled strikes to designated
+                  target areas, such as the torso and head, with points awarded
+                  for valid techniques.
+                </p>
+              </div>
+              <div
+                class="mask text-white text-2xl bg-black w-full h-full rounded-3xl p-3 text-center flex items-center justify-center absolute top-0"
+              >
+                <p>5</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- POOMSAE -->
+      <section
+        id="poomsae"
+        class="md:h-[120vh] w-full hiz p-3 flex flex-col justify-center items-center"
+      >
+        <div
+          class="container font2 flex flex-col justify-center items-center max-md:gap-10"
+        >
+          <div
+            class="row1 flex md:gap-14 gap-10 justify-center max-md:flex-col"
+          >
+            <div class="boxz md:w-1/3 relative">
+              <div
+                class="riltext bg-gray-300 w-full rounded-3xl p-3 text-justify h-fit"
+              >
+                <p>
+                  <strong>Poomsae</strong> are choreographed sequences of
+                  movements that simulate combat scenarios against imaginary
+                  opponents.
+                </p>
+              </div>
+              <div
+                class="mask text-white text-2xl bg-[#ac3447] w-full h-full rounded-3xl p-3 text-center flex items-center justify-center absolute top-0"
+              >
+                <p>1</p>
+              </div>
+            </div>
+            <div class="boxz md:w-1/3 relative flex items-center">
+              <div
+                class="riltext bg-gray-300 w-full rounded-3xl p-3 text-justify h-fit"
+              >
+                <p>
+                  They emphasize the execution of techniques with precision,
+                  fluidity, and correct form.
+                </p>
+              </div>
+              <div
+                class="mask text-white text-2xl bg-[#ac3447] w-full h-full rounded-3xl p-3 text-center flex items-center justify-center absolute top-0"
+              >
+                <p>2</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="row2 flex items-center justify-center p-0 m-0 relative max-md:flex-col"
+          >
+            <div class="boxz md:w-1/4 relative">
+              <div
+                class="riltext bg-gray-300 rounded-3xl p-3 text-justify h-fit"
+              >
+                <p>
+                  Poomsae help practitioners develop muscle memory, balance,
+                  coordination, and focus.
+                </p>
+              </div>
+              <div
+                class="mask text-white text-2xl bg-[#ac3447] w-full h-full rounded-3xl p-3 text-center flex items-center justify-center absolute top-0"
+              >
+                <p>3</p>
+              </div>
+            </div>
+
+            <div class="md:w-1/2 p-3">
+              <img src="src/images/poomsae.png" alt="" />
+            </div>
+            <div class="boxz md:w-1/4 relative">
+              <div
+                class="riltext bg-gray-300 w-full rounded-3xl p-3 text-justify h-fit"
+              >
+                <p>
+                  Each poomsae has a specific sequence of movements and is
+                  performed with attention to rhythm, breathing, and
+                  concentration.
+                </p>
+              </div>
+              <div
+                class="mask text-white text-2xl bg-[#ac3447] w-full h-full rounded-3xl p-3 text-center flex items-center justify-center absolute top-0"
+              >
+                <p>4</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="row3 flex md:gap-14 gap-10 justify-center max-md:flex-col"
+          >
+            <div class="boxz md:w-1/3 relative flex items-center">
+              <div
+                class="riltext bg-gray-300 w-full rounded-3xl p-3 text-justify h-fit"
+              >
+                <p>
+                  Poomsae serve as a way to express and refine the artistry of
+                  Taekwondo techniques.
+                </p>
+              </div>
+              <div
+                class="mask text-white text-2xl bg-[#ac3447] w-full h-full rounded-3xl p-3 text-center flex items-center justify-center absolute top-0"
+              >
+                <p>5</p>
+              </div>
+            </div>
+            <div class="boxz md:w-1/3 relative">
+              <div
+                class="riltext bg-gray-300 w-full rounded-3xl p-3 text-justify h-fit"
+              >
+                <p>
+                  Competitions may include demonstrations of poomsae, where
+                  practitioners are judged on factors such as accuracy, power,
+                  and presentation.
+                </p>
+              </div>
+              <div
+                class="mask text-white text-2xl bg-[#ac3447] w-full h-full rounded-3xl p-3 text-center flex items-center justify-center absolute top-0"
+              >
+                <p>6</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="w-full h-20 redpic bg-cover bg-center bg-fixed">
+      <h1 class="text-white font2 text-lg text-center">
+        copyright &copy; 2024 aeishah
+      </h1>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="text/javascript">
+      $(".carls").slick({
+        centerMode: true,
+        centerPadding: "60px",
+        slidesToShow: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: "40px",
+              slidesToShow: 3,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: "40px",
+              slidesToShow: 1,
+            },
+          },
+        ],
+      });
+
+      function showDescription(descriptionClass) {
+        const description = document.querySelector("." + descriptionClass);
+        description.classList.remove("hidden");
+      }
+
+      function hideDescription(descriptionClass) {
+        const description = document.querySelector("." + descriptionClass);
+        description.classList.add("hidden");
+      }
+    </script>
+  </body>
+</html>
